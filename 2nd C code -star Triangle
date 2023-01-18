@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	int a;
+	int i;
+	int j;
+	int p;
+	scanf("%d",&a);
+	for(i=0;i<=a;i++){
+		for(j=a-i;j>=0;j--){
+			printf(" ");	
+		}
+		for(p=0;p<=i;p++){
+			printf("*");
+		}	
+		printf("\r\n");	
+		}
+		
+
+}
