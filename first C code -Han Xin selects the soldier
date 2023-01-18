@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	int a;
+	int b;
+	int c;
+	int i;
+	scanf("%d%d%d",&a,&b,&c);
+	if(a>3 || b>5|| c>7){
+		printf("人数错误\n");
+	} 
+	if (a<3 & b<5 & c<7){
+		for(i=10;i<=100;i++){
+		if (i%3==a &i%5==b &i%7==c){
+			printf("共有%d人\n",i);
+			break;
+			return 0;
+			if(i==101){
+				printf("错误\n");
+		}	
+		}	
+	}
+
+		
+	}
+	
+}
