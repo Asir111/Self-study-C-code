@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main(void){
+	srand((unsigned int)time(NULL));
+	int a= rand() % 100 + 1 ;
+	int b= rand() % 100 + 1;
+	int c;
+	char s;
+	a= rand() % 100 + 1 ;
+	b= rand() % 100 + 1 ;
+	printf("%d %d",a,b);
+	s=getchar();
+	switch(s){
+		case '+':
+		printf("result:%d",a+b);
+		break;
+	
+		case '-':
+		printf("result:%d",a-b);
+		break;
+		
+		case '*':
+		c=a*b;
+		printf("result:%d",a*b);
+		break;
+		
+		case '/':
+		c=a/b;
+		printf("result:%d",a/b);
+		break;
+		}
+		
+	}
