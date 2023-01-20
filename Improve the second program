@@ -1,0 +1,82 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main(void){
+	srand((unsigned int)time(NULL));
+	int a= rand() % 100 + 1 ;
+	int b= rand() % 100 + 1;
+	int c;
+	int r;
+	char s;
+	a= rand() % 100 + 1 ;
+	b= rand() % 100 + 1 ;
+	printf("%d %d",a,b);
+	printf("请输入运算符（+-*/）：");
+	s=getchar();
+	switch(s){
+		case '+':
+	
+		c=a+b;
+		printf("请输入结果：");
+		scanf("%d",&r);
+		if(r==c)
+		{
+			printf("答对了");}
+		else
+		{
+			printf("答错了,正确答案是%d",c);
+		}
+		return 0;
+		break;
+	
+		case '-':
+		
+		c=a-b;
+		printf("请输入结果：");
+		if(r==c)
+		{
+			printf("答对了");}
+		else
+		{
+			printf("答错了,正确答案是%d",c); 
+		}
+		return 0;
+		break;
+		
+		case '*':
+	
+		c=a*b;
+		printf("请输入结果：");
+		if(r==c)
+		{
+			printf("答对了");}
+		else
+		{
+			printf("答错了,正确答案是%d",c);
+		}
+		return 0;
+		break;
+		
+		case '/':
+			if(b!=0){
+				c=a/b;
+			}
+			else{
+				printf("除数不能为0"); 
+			}		
+		if(r==c)
+		{
+			printf("答对了");}
+		else
+		{
+			printf("答错了,正确答案是%d",c); 
+		}
+		return 0;
+		printf("请输入结果：");
+		break;
+		default:
+			printf("输入的运算符不正确！\n");
+			break;
+		}
+	
+	}
